@@ -1,17 +1,18 @@
 import firebase from "firebase/app";
-import 'firebase/firebase-firestore'
-import 'firebase/auth'
+import "firebase/auth";
+import "firebase/firestore";
 
 
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
+  apiKey: "AIzaSyAbZtTHqCzGJZCpFu6a6ZQdgDrXwVgOyT8",
+  authDomain: "vue-firebase-a3e9f.firebaseapp.com",
+  projectId: "vue-firebase-a3e9f",
+  storageBucket: "vue-firebase-a3e9f.firebasestorage.app",
+  messagingSenderId: "451733548701",
+  appId: "1:451733548701:web:a35cef62620cdfbafeee74",
+  measurementId: "G-KQEV7HZ4TW"
 };
 
 // init firebase
