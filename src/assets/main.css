@@ -1,113 +1,26 @@
-/* 1. Global & Background */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-}
-
 body {
-  background: radial-gradient(circle at top left, #e3e1ff, #d1ccff);
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  background: #e3e1ff;
+  color: #444;
 }
-
-/* 2. The Card Container */
 .container {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px); /* Blurs background for a "glass" look */
-  width: 100%;
-  max-width: 400px;
-  padding: 40px;
-  border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 20px 40px rgba(28, 6, 49, 0.08);
-  text-align: center;
-}
-
-/* 3. Title Styling */
-h2 {
-  color: #444;
-  margin-bottom: 30px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-}
-
-/* 4. The Form Layout */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* 5. Sleek Input Styling */
-input {
-  width: 100%;
-  padding: 16px 20px;
-  border-radius: 16px;
-  border: 2px solid transparent;
-  background: #f0f0f8;
-  color: #444;
-  font-size: 15px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-input:focus {
+  width: 90%;
+  max-width: 960px;
+  margin: 80px auto;
+  border-radius: 20px;
+  box-shadow: 2px 4px 6px rgba(28, 6, 49, 0.1);
   background: white;
-  border-color: #5ae4ca;
-  box-shadow: 0 10px 20px rgba(90, 228, 202, 0.15);
-  outline: none;
-  transform: translateY(-2px);
 }
-
-input::placeholder {
-  color: #a0a0c0;
+.error {
+  color: #ff3f80;
+  font-size: 14px;
 }
-
-/* 6. The "Pop" Button */
 button {
+  text-decoration: none;
   background: #5ae4ca;
   color: white;
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
-  border-radius: 16px;
-  padding: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px 20px;
   cursor: pointer;
-  margin-top: 10px;
-  box-shadow: 0 8px 20px rgba(90, 228, 202, 0.3);
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background: #4cd3b9;
-  box-shadow: 0 12px 24px rgba(90, 228, 202, 0.4);
-  transform: scale(1.02);
-}
-
-button:active {
-  transform: scale(0.98);
-}
-
-/* 7. Error Handling */
-.error {
-  background: #fff0f5;
-  color: #ff3f80;
-  padding: 10px;
-  border-radius: 12px;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  border-left: 4px solid #ff3f80;
-}
-
-/* 8. Mobile Responsiveness */
-@media (max-width: 480px) {
-  .container {
-    padding: 30px 20px;
-    border-radius: 20px;
-  }
 }
